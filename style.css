@@ -16,7 +16,7 @@
         
     background-image: url("./images/hero-desktop.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 
     float: right;
 
