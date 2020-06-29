@@ -24,4 +24,4 @@ Your users should be able to:
 * [Frontend Mentor](https://www.frontendmentor.io/)
 
 ## Summary
-* The project is done solely for educational purposes.
+* _The project is done solely for educational purposes._
