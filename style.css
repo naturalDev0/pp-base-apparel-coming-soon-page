@@ -16,7 +16,7 @@
 }
 
 #s-one-sub {
-    padding: 5rem 2rem 0 5rem;    
+    padding: 2.5rem 20rem 0 11rem;    
 }
 
 #t-title {
@@ -37,6 +37,13 @@
 #p-body {
     color: hsl(0, 36%, 70%);
     font-size: 16px;
+}
+#form-body {
+    
+}
+
+#title-sect {
+    padding-top: 5rem;
 }
 
 #section-one {
