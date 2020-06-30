@@ -6,8 +6,12 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+#s-one-sub {
+    padding: 5rem 2rem 0 5rem;    
+}
+
 #t-title {
-    font-weight: 300;
+    font-weight: 400;
     font-size: x-large;    
     text-transform: uppercase;
     letter-spacing: 5px;
