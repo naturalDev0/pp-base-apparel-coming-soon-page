@@ -6,23 +6,32 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+#logo {
+    width: 10rem;
+    height: 5rem;
+    
+    background: url("./images/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #s-one-sub {
     padding: 5rem 2rem 0 5rem;    
 }
 
 #t-title {
-    font-weight: 400;
-    font-size: x-large;    
+    font-weight: 300;
+    font-size: 4rem;    
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 1rem;
     
     color: hsl(0, 36%, 70%);
     /* color: hsl(0, 93%, 68%); */
 }
-
 #t-sub-title {
+    font-size: 4rem;    
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 1rem;
 }
 
 #p-body {
