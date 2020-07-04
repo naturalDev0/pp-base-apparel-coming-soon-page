@@ -30,10 +30,14 @@
         </div>
         
         <!-- Form section within Body -->
-        <form id="form-body">
-          <input type="email" id="email" name="email" placeholder="Email Address"><button type="submit"><img id="arrow" src="./images/icon-arrow.svg" alt="entry arrow button"/></button>          
+        <form id="form-body" onsubmit="return(emailValid())">
+          <input type="email" id="email" name="email" placeholder="Email Address">
+          <button type="submit" onclick="emailValid()"><img id="arrow" src="./images/icon-arrow.svg" alt="entry arrow button"/></button>          
         </form>
-        <div id="error-msg"></div>
+        
+        <div>
+          <p id="error-msg"></p>
+        </div>        
 
       </div> 
     </div>
@@ -46,5 +50,6 @@
         Coded by <a href="https://www.github.com/naturalDev0">Tommy Lee</a>.
       </p>
     </footer>
+    <script src="func.js"></script>
   </body>
 </html>
