@@ -55,6 +55,10 @@
     height: 30px;
 }
 
+#error-msg {
+    color:  red;
+}
+
 input[type='email'] {
 
     padding: 25px 120px 25px 10px;
