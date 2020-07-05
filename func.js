@@ -1,19 +1,19 @@
 // Add in functions later on for email input validation
 
+// Validating email
 function emailValid() {
     
     let value = document.getElementById("email").value,
-        error = document.getElementById("error-msg"),
-        text = "";
+        error = document.getElementById("error-msg");
 
-    console.log(value);
-    console.log(error);
-
+    // Check if value is empty
     if (value === "") { 
-        error.innerHTML = "Please provide an email";
-        return false;
+        
+        // Output result towards HTML page
+        error.innerHTML = "Please provide a valid email";
+        return false;   // return the status to form
     } else {
-        error.innerHTML = "Input ok";
+        error.innerHTML = "";
         return true;
     }
 }
