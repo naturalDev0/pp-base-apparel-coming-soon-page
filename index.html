@@ -30,20 +30,23 @@
         </div>
         
         <!-- Form section within Body -->
-        <form id="form-body" onsubmit="return(emailValid())">
-          <input type="email" id="email" name="email" placeholder="Email Address">
-          <button type="submit" onclick="emailValid()"><img id="arrow" src="./images/icon-arrow.svg" alt="entry arrow button"/></button>          
-        </form>
-        
-        <div>
-          <p id="error-msg"></p>
-        </div>        
+        <div id="form-body">
+          
+          <form onsubmit="return(emailValid())">
+            <input type="email" id="email" name="email" placeholder="Email Address">
+            <button type="submit" onclick="emailValid()"><img id="arrow" src="./images/icon-arrow.svg" alt="entry arrow button"/></button>          
+          </form>
+          
+          <div id="error-msg-box">
+            <p id="error-msg"></p>
+          </div>        
+        </div>
 
       </div> 
     </div>
     <div id="section-two"></div>
     
-    <!-- Comment out this section to start building off the webpage -->
+    <!-- Footer section -->
     <footer>
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
