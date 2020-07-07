@@ -33,10 +33,11 @@
         <div id="form-body">
           
           <form onsubmit="return(emailValid())">
-            <input type="email" id="email" name="email" placeholder="Email Address">
+            <input type="text" id="email" name="email" placeholder="Email Address">
             <button type="submit" onclick="emailValid()"><img id="arrow" src="./images/icon-arrow.svg" alt="entry arrow button"/></button>          
           </form>
           
+          <!-- Project error message when error is met -->
           <div id="error-msg-box">
             <p id="error-msg"></p>
           </div>        
