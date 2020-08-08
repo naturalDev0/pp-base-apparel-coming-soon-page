@@ -7,17 +7,19 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 #logo {
+
     width: 10rem;
     height: 5rem;
     
     background: url("./images/logo.svg");
     background-repeat: no-repeat;
     background-position: center;
-}
-
-#s-one-sub {
-    padding: 2.5rem 240px 0 240px;    
 }
 
 #t-title {
@@ -29,35 +31,25 @@
     color: hsl(0, 36%, 70%);
     /* color: hsl(0, 93%, 68%); */
 }
-#t-sub-title {
-    font-size: 4rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1rem;
-
-    color:hsl(0, 6%, 24%);
-}
 
 #p-body {
     color: hsl(0, 36%, 70%);
     font-size: 16px;
     line-height: 1.6;
 
-    padding-top: 1.5rem;
+    padding: 22.5px 20px 0 20px;
 }
 #form-body {
-    padding-top: 3rem;
+    padding: 45px 20px 0 20px;
     height: 0;
 }
 
-/* #error-icon {
-    padding-left: 5rem;
-} */
 
 #error-msg-box {
     color:  red;
     font-size: 14px;
     padding-left: 25px;
+    text-align: left;
 }
 
 input[type='text'] {
@@ -107,29 +99,37 @@ button[type='submit']:hover {
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 37%, 81%));
 }
 
-#title-sect {
-    padding-top: 5rem;
-}
-
 #section-one {
-    width: 60%;
+    order: 1;
+    padding: 20px 0 20px 30px;
+}
+#section-two {
+    order: 3;
+
+    text-align: center;
+    padding: 70px 0;
+
+    width: 100%;
     height: 100vh;
 
     background-image: url("./images/bg-pattern-desktop.svg");
-    /* linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)), */
     background-color: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
-    float: left;
 }
-#section-two {
-    width: 40%;
-    height: 100vh;
+#section-two #logo {
+    display: none;
+}
+
+#section-three {
+    order: 2;
+
+    width: 100%;
+    height: 50vh;
         
-    background-image: url("./images/hero-desktop.jpg");
+    background-image: url("./images/hero-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
-    float: right;   
 }
 
 form {
@@ -160,18 +160,44 @@ input.err-icon {
     background-position: 70% 50%;
 }
 
+.t-sub-title {
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+
+    color:hsl(0, 6%, 24%);
+}
+
 /* Media Queries */
 /* ------------- */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 768px) {
+
+    body {
+        flex-direction: row-reverse;
+    }
     #section-one {
-        float: none;
-        width: 100%;
-        order: 2;
+        display: none;
     }
     #section-two {
-        display: none;
-        float: none;
-        width: 100%;
-        order: 1;
+        text-align: left;
+        padding: 50px 150px;
     }
+    #section-two #logo {
+        display: block;
+    }
+    #section-three {
+        width: 100%;
+        height: 100vh;
+        background-image: url("./images/hero-desktop.jpg");
+    }
+    #title-sect {
+        padding-top: 60px;
+    }
+    #p-body,
+    #form-body {      
+        padding-right: 110px;
+        padding-left: 0;
+    }
+    
 }
