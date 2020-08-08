@@ -32,15 +32,17 @@
         <!-- Form section within Body -->
         <div id="form-body">
           
-          <form onsubmit="return(emailValid())">
-            <input type="text" id="email" name="email" placeholder="Email Address">
-            <button type="submit" onclick="emailValid()"><img id="arrow" src="./images/icon-arrow.svg" alt="entry arrow button"/></button>          
+          <!-- Form receiving input value -->
+          <form class="form">
+            <input type="text" class="email" name="email" placeholder="Email Address">            
+            <button type="submit"><img id="arrow" src="./images/icon-arrow.svg" alt="entry arrow button"/></button>          
           </form>
           
           <!-- Project error message when error is met -->
           <div id="error-msg-box">
             <p id="error-msg"></p>
           </div>        
+        
         </div>
 
       </div> 
@@ -48,12 +50,14 @@
     <div id="section-two"></div>
     
     <!-- Footer section -->
-    <footer>
+    <!-- <footer>
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://www.github.com/naturalDev0">Tommy Lee</a>.
       </p>
-    </footer>
+    </footer> -->
+
+    <!-- Other supporting scripts -->
     <script src="func.js"></script>
   </body>
 </html>
